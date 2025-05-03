@@ -13,9 +13,12 @@
     {% endif %}
 
     {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    <!--이 부분은 page_footr의 FOLLOw : 후 뒤에 나타날 것을 표시함-->
+      <li><a href="https://github.com/kty5788/"></i>{{ "GITHUB" }}</a></li>
+      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"></i>{{ "FEED" }}</a></a></li>
     {% endunless %}
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<!--이 부분은 page_footer의 copyright 가장 밑에 검은색 바 부분의 내 블로그 이름과 Jekyll을 소개하는 부분-->
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.copyright | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} Jekyll</a> &amp; Minimal Mistakes</a>.</div>
