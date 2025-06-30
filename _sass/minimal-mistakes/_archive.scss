@@ -50,10 +50,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
-  a[rel="permalink"]::before {
-    content: '';
-    position: absolute;
-    inset: 0;
+  // 제목 링크에 가상요소를 씌우게 함
+  //a[rel="permalink"]::before {
+  //  content: '';
+  //  position: absolute;
+  //  inset: 0;
+  //}
+
+  a { 
+    color : inherit;
+    text-decoration: none;
   }
 
   a + a {

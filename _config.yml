@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "fhsuqwo"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Department of **Computer Engineering**"
+  avatar           : /assets/images/test_image.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "CS Major"
   location         : "Korea"
   email            : "kty5788kty@gmail.com"
   links:
